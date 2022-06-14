@@ -1,8 +1,11 @@
 spring:
   application:
-    name: spring-boot-demo-server
+    name: eureka-server
   profiles:
     active: local
+
+server:
+  port: 3000
 
 eureka:
   client:
@@ -10,8 +13,5 @@ eureka:
     fetchRegistry: false
     serviceUrl:
       defaultZone: http://localhost:3000/eureka
-
-server:
-  port: 3000
 
 
